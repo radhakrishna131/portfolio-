@@ -1,203 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radha Krishna | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <i class="fas fa-code"></i>
-            <span>Radha Krishna</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Shan — Creative Full Stack Developer & Interactive Web Engineer</title>
+    <meta name="description" content="Portfolio of Shan, Creative Full Stack Developer specializing in immersive digital experiences, 3D web experiences, scrollytelling, motion design, and scalable full stack architecture." />
+    <meta name="keywords" content="Shan, Creative Full Stack Developer, Interactive Web Experiences, Scrollytelling, Three.js, GSAP, React, Next.js, 3D Web Experiences, Premium UI Engineering, Node.js, Express.js, Supabase, India" />
+    <meta name="author" content="Shan" />
+    <meta name="robots" content="index, follow" />
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <!-- Futuristic Profile with Blue Theme -->
-            <div class="profile-container">
-                <div class="profile-orb"></div>
-                <div class="profile-lightning"></div>
-                <div class="profile-core">
-                    <img src="profile.jpg" alt="Profile" class="profile-img">
-                </div>
-                <div class="lightning-bolt">
-                    <i class="fas fa-bolt"></i>
-                </div>
-            </div>
-            <h1>Future <span>CSE Engineer</span> in the Making</h1>
-            <p>Welcome to my digital portfolio! I'm a first-year Computer Science and Engineering student passionate about technology, innovation, and solving real-world problems through code. Explore my journey, projects, and aspirations.</p>
-            <a href="#projects" class="btn">View Projects</a>
-        </div>
-    </section>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Shan — Creative Full Stack Developer" />
+    <meta property="og:description" content="Building digital experiences beyond ordinary. Crafting immersive web applications blending storytelling, animation, 3D graphics, and scalable architecture." />
+    <meta property="og:site_name" content="Shan Portfolio" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?auto=format&fit=crop&w=1200&q=80" />
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="section-title">
-            <h2>About Me</h2>
-        </div>
-        <div class="about-content">
-            <div class="about-text">
-                <h3>First-Year CSE Student | Aspiring Developer</h3>
-                <p>I'm currently pursuing my Bachelor of Technology in Computer Science and Engineering at a premier institution. My academic journey has just begun, but I'm already diving deep into programming, algorithms, and emerging technologies.</p>
-                <p>With a strong foundation in mathematics and logical thinking from my school days, I'm now exploring the fascinating world of data structures, web development, and system design. I believe in learning by doing and constantly challenge myself with new coding projects.</p>
-                
-                <div class="skills">
-                    <div class="skill">Python</div>
-                    <div class="skill">C</div>
-                    <div class="skill">HTML/CSS</div>
-                    <div class="skill">JavaScript</div>
-                    <div class="skill">Data Structures</div>
-                    <div class="skill">Algorithms</div>
-                    <div class="skill">Problem Solving</div>
-                    <div class="skill">Web Development</div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Shan — Creative Full Stack Developer" />
+    <meta name="twitter:description" content="Building digital experiences beyond ordinary. Crafting immersive web applications blending storytelling, animation, 3D graphics, and scalable architecture." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?auto=format&fit=crop&w=1200&q=80" />
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="section-title">
-             <h2><i class="fas fa-project-diagram"></i> My Projects</h2>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-img">
-                    <i class="fas fa-book"></i>
-                </div>
-                <div class="project-info">
-                    <h3>Must Material</h3>
-                    <p>​Must Material is a free online educational platform developed by a student, offering study materials and resources for 6th grade through B.Tech with instant, no-registration access.</p>
-                    <div class="project-tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                    <a href="https://github.com/radhakrishna131/Mustmaterial" class="btn">View Code</a>
-                    <a href="https://mustmaterial.vercel.app/" class="btn">Live Demo</a>
-                </div>
-            </div>
-            
-            <!--<div class="project-card">
-                <div class="project-img">
-                    <i class="fas fa-gamepad"></i>
-                </div>
-                <div class="project-info">
-                    <h3>Simple Arcade Game</h3>
-                    <p>A retro-style game developed using PyGame with multiple levels and scoring system.</p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">PyGame</span>
-                        <span class="tag">Game Dev</span>
-                    </div>
-                    <a href="#" class="btn">Play Game</a>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <div class="project-img">
-                    <i class="fas fa-laptop-code"></i>
-                </div>
-                <div class="project-info">
-                    <h3>Portfolio Website</h3>
-                    <p>A responsive portfolio website built with HTML, CSS, and JavaScript showcasing my skills.</p>
-                    <div class="project-tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                    </div>
-                    <a href="#" class="btn">View Site</a>
-                </div>
-            </div>-->
-        </div>
-    </section>
+    <!-- Preconnect for Google Fonts performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="section-title">
-            <h2><i class="fas fa-paper-plane"></i> Get In Touch</h2></div>
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>Let's Connect!</h3>
-                <p>I'm always open to discussing new opportunities, projects, or just having a tech conversation. Feel free to reach out!</p>
-                
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>radhakrishna628191@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <div>
-                            <h4>LinkedIn</h4>
-                            <p>/in/radhakrishnasure</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <div>
-                            <h4>GitHub</h4>
-                            <p>/radhakrishna131</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="contact-form">
-               <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn" style="width: 100%;">Send Message</button>
-                    <div id="successMessage" class="success-message">
-                        Message sent successfully! I'll get back to you soon.
-                    </div>
-                    <div id="errorMessage" class="error-message">
-                        Sorry, there was an error sending your message. Please try again.
-                    </div>
-                </form>
-                                    
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="social-links">
-            <a href="https://github.com/radhakrishna131"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/radhakrishnasure?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/radha_krishna.2810?igsh=NWs2Z3Z0Y3J5bjc2"><i class="fab fa-instagram"></i></a>
-        </div>
-        <p>&copy; 2025 Radha Krishna| Portfolio. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+    <!-- JSON-LD Structured Data Schema (SEO) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://shan.dev/#person",
+            "name": "Shan",
+            "jobTitle": "Creative Full Stack Developer",
+            "description": "Creative Full Stack Developer specializing in Immersive Digital Experiences, Scrollytelling, 3D Web Experiences, Premium UI Engineering, and Scalable Backend Architecture.",
+            "url": "https://shan.dev",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "India"
+            },
+            "knowsAbout": [
+              "Creative Development",
+              "Frontend Engineering",
+              "Full Stack Development",
+              "Interactive Storytelling",
+              "3D Web Experiences",
+              "Scrollytelling",
+              "Motion Design",
+              "Performance Optimization",
+              "Premium UI Engineering",
+              "React",
+              "Next.js",
+              "Three.js",
+              "GSAP",
+              "Node.js",
+              "Supabase"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://shan.dev/#website",
+            "url": "https://shan.dev",
+            "name": "Shan Portfolio",
+            "publisher": {
+              "@id": "https://shan.dev/#person"
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
-
