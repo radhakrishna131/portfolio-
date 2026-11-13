@@ -352,16 +352,6 @@
         margin-right: 5%;
     }
 
-    .zone-studio {
-        bottom: 0;
-        right: 0;
-        width: 25%;
-        height: 40%;
-        //background: rgba(255, 165, 0, 0.25); // DEBUG orange
-        margin-bottom: 19%;
-        margin-right: 15%;
-    }
-
     .map-room-label {
         position: absolute;
         font-family: 'Cabin Sketch', cursive, sans-serif;
@@ -394,11 +384,6 @@
         &.contact {
             top: 14%;
             left: 76%;
-        }
-
-        &.studio {
-            top: 75%;
-            left: 72%;
         }
     }
 

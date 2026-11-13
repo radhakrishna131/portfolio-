@@ -14,7 +14,6 @@ const ROOMS = [
     { id: 'about', label: 'About', x: 43, y: 38 },      // Paper airplane (left side)
     { id: 'gallery', label: 'Gallery', x: 43, y: 72 },  // City buildings (bottom left)
     { id: 'contact', label: 'Contact', x: 57, y: 25 },  // Pier/dock (top right)
-    { id: 'studio', label: 'Studio', x: 57, y: 55 },    // Monitors stack (right side)
 ];
 
 // Pin starting position - the dashed circle at the bottom of the tower
@@ -54,8 +53,7 @@ const NavigationUI = () => {
     const paintedMapsRefs = {
         about: useRef(),
         gallery: useRef(),
-        contact: useRef(),
-        studio: useRef()
+        contact: useRef()
     };
 
     useEffect(() => {
@@ -90,18 +88,6 @@ const NavigationUI = () => {
                 clipPath: (hoveredRoom === 'contact' || currentRoom === 'contact')
                     ? 'polygon(60% 10%, 95% 10%, 95% 35%, 60% 35%)'
                     : 'polygon(95% 10%, 95% 10%, 95% 35%, 95% 35%)',
-                duration: 0.5,
-                ease: "power2.out"
-            });
-        }
-
-        // Studio (zone: right 15%, bottom 19%, width 25%, height 40%)
-        // -> X: 60% to 85% (since right=15% means left is 100-15-25=60%), Y: 41% to 81% (since bottom=19% means top is 100-19-40=41%)
-        if (paintedMapsRefs.studio.current) {
-            gsap.to(paintedMapsRefs.studio.current, {
-                clipPath: (hoveredRoom === 'studio' || currentRoom === 'studio')
-                    ? 'polygon(60% 41%, 85% 41%, 85% 81%, 60% 81%)'
-                    : 'polygon(85% 41%, 85% 41%, 85% 81%, 85% 81%)',
                 duration: 0.5,
                 ease: "power2.out"
             });
@@ -337,9 +323,8 @@ const NavigationUI = () => {
                             <img ref={paintedMapsRefs.about} src="/images/map_about_painted.webp" alt="" className="painted-map-layer" style={{ clipPath: 'polygon(10% 20%, 10% 20%, 10% 55%, 10% 55%)' }} />
                             <img ref={paintedMapsRefs.gallery} src="/images/map_gallery_painted.webp" alt="" className="painted-map-layer" style={{ clipPath: 'polygon(10% 57%, 10% 57%, 10% 92%, 10% 92%)' }} />
                             <img ref={paintedMapsRefs.contact} src="/images/map_contact_painted.webp" alt="" className="painted-map-layer" style={{ clipPath: 'polygon(95% 10%, 95% 10%, 95% 35%, 95% 35%)' }} />
-                            <img ref={paintedMapsRefs.studio} src="/images/map_studio_painted.webp" alt="" className="painted-map-layer" style={{ clipPath: 'polygon(85% 41%, 85% 41%, 85% 81%, 85% 81%)' }} />
 
-                            {/* Hover Zones — 4 quadrants covering the map */}
+                            {/* Hover Zones — covering the map */}
                             <button
                                 type="button"
                                 className="map-hover-zone zone-about"
@@ -370,22 +355,11 @@ const NavigationUI = () => {
                                 onClick={() => handleRoomClick('contact')}
                                 aria-label="Teleport to Contact room"
                             />
-                            <button
-                                type="button"
-                                className="map-hover-zone zone-studio"
-                                onMouseEnter={() => setHoveredRoom('studio')}
-                                onMouseLeave={() => setHoveredRoom(null)}
-                                onFocus={() => setHoveredRoom('studio')}
-                                onBlur={() => setHoveredRoom(null)}
-                                onClick={() => handleRoomClick('studio')}
-                                aria-label="Teleport to Studio room"
-                            />
 
                             {/* Permanent Map Text Labels */}
                             <div className="map-room-label about">ABOUT</div>
                             <div className="map-room-label gallery">THE<br />GALLERY</div>
                             <div className="map-room-label contact">CONTACT</div>
-                            <div className="map-room-label studio">THE<br />STUDIO</div>
 
                             {/* Pin slot markers - 4 locations */}
                             {ROOMS.map((room) => (

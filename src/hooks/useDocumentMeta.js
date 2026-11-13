@@ -22,11 +22,6 @@ const ROOM_META = {
         title: `Gallery & Featured Work — ${personalInfo.name} Portfolio`,
         description: `Explore the projects engineered by ${personalInfo.name}, including MUST Material, AI Study Assistant, and creative web applications.`,
     },
-    studio: {
-        path: '/studio',
-        title: `The Studio — ${personalInfo.name} Portfolio`,
-        description: `Explore ${personalInfo.name}'s interactive 3D studio showcasing web applications, machine learning experiments, and technical architectures.`,
-    },
     contact: {
         path: '/contact',
         title: `Contact — ${personalInfo.name} Portfolio`,
@@ -39,7 +34,6 @@ const PATH_TO_ROOM = {
     '/': null,
     '/about': 'about',
     '/gallery': 'gallery',
-    '/studio': 'studio',
     '/contact': 'contact',
 };
 

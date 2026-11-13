@@ -41,7 +41,6 @@
    - **Corridor**: Entrance doors leading to an infinite corridor with dynamic 3D letters splitting apart as the camera flies through.
    - **About Room**: Looping airplane flight through clouds, balloon milestones, and floating 3D typography.
    - **Gallery Room**: Paper sketches hanging on a wire with wooden clothespins; clicking a sketch reveals interactive details and case studies.
-   - **Studio Room**: Interactive retro CRT monitor towers showcasing tech demos and case studies.
    - **Contact Room**: Floating barrels in ocean water for GitHub, LinkedIn, Twitter/X, and Email, plus an interactive "Message in a Bottle" paper submission system.
 2. **2D Accessible & Responsive Overlay (HTML / SCSS / GSAP)**:
    - Clean, accessible layout for screen readers, mobile devices, and users with motion sensitivity.
@@ -233,7 +232,6 @@ Textures and hand-drawn assets are stored in [`public/textures/`](file:///storag
 | **Door Badge** | Entrance Doors | Configured via `handle` in `src/config/personalInfo.js` |
 | **About Sky Avatar** | 3D About Room | `public/textures/about/awatarnachmurce.webp` |
 | **Gallery 3D Sketches** | 3D Gallery Room | Textures in `public/textures/gallery/` & `src/components/canvas/rooms/Gallery/GalleryRoom.jsx` |
-| **Studio Monitors** | 3D Studio Room | `src/components/canvas/rooms/Studio/contentData.js` |
 | **Favicon & Icons** | Browser Tab | `public/favicon.svg`, `public/favico.png` |
 
 ---

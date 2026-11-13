@@ -55,11 +55,9 @@ export const CORRIDOR_TEXTURES = [
     '/textures/corridor/doors/klamkadodrzwi.webp',
     '/textures/corridor/doors/backsingledoors.webp',
     '/textures/corridor/doors/drzwiprojekty.webp',
-    '/textures/corridor/doors/drzwisocial.webp',
     '/textures/corridor/doors/drzwiabout.webp',
     '/textures/corridor/doors/drzwikontakt.webp',
     '/textures/corridor/doors/drzwiprojekty_painted.webp',
-    '/textures/corridor/doors/drzwisocial_painted.webp',
     '/textures/corridor/doors/drzwiabout_painted.webp',
     '/textures/corridor/doors/drzwikontakt_painted.webp',
     // Signs
@@ -101,7 +99,6 @@ export const IMAGE_ASSETS = [
     '/images/map_about_painted.webp',
     '/images/map_contact_painted.webp',
     '/images/map_gallery_painted.webp',
-    '/images/map_studio_painted.webp',
     '/images/pin.webp',
     '/images/pin-slot.webp',
 ];
@@ -232,49 +229,8 @@ export const ABOUT_TEXTURES = [
     '/textures/clouds/f6e358bc-d27c-41dd-95f4-6787a835c41e.webp',
 ];
 
-// Studio Room textures (loaded via useLoader(TextureLoader))
-export const STUDIO_TEXTURES = [
-    // Monitor (blog)
-    '/textures/studio/monitor_front.webp',
-    '/textures/studio/monitor_front_painted.webp',
-    '/textures/studio/monitor_back.webp',
-    '/textures/studio/monitor_back_painted.webp',
-    '/textures/studio/monitor_top.webp',
-    '/textures/studio/monitor_top_painted.webp',
-    '/textures/studio/monitor_bottom.webp',
-    '/textures/studio/monitor_bottom_painted.webp',
-    '/textures/studio/monitor_left.webp',
-    '/textures/studio/monitor_left_painted.webp',
-    '/textures/studio/monitor_right.webp',
-    '/textures/studio/monitor_right_painted.webp',
-    // TV (youtube)
-    '/textures/studio/tv_front.webp',
-    '/textures/studio/tv_front_painted.webp',
-    '/textures/studio/tv_back.webp',
-    '/textures/studio/tv_back_painted.webp',
-    '/textures/studio/tv_top.webp',
-    '/textures/studio/tv_top_painted.webp',
-    '/textures/studio/tv_bottom.webp',
-    '/textures/studio/tv_bottom_painted.webp',
-    '/textures/studio/tv_side.webp',
-    '/textures/studio/tv_side_painted.webp',
-    // Phone (tiktok)
-    '/textures/studio/phone_front.webp',
-    '/textures/studio/phone_front_painted.webp',
-    '/textures/studio/phone_back.webp',
-    '/textures/studio/phone_back_painted.webp',
-    '/textures/studio/phone_side.webp',
-    '/textures/studio/phone_side_painted.webp',
-    // Custom content front textures
-    '/textures/studio/monitorfront_postnafbdoublewinner.webp',
-    '/textures/studio/monitorfront_postnafbdoublewinner_painted.webp',
-    '/textures/studio/phonefront_followmeontiktok.webp',
-    '/textures/studio/phonefront_followmeontiktok_painted.webp',
-    '/textures/studio/tvfront_filmikedytowaniezdjec.webp',
-    '/textures/studio/tvfront_filmikedytowaniezdjec_painted.webp',
-    '/textures/studio/tvfront_filmikprojektdlamultiego.webp',
-    '/textures/studio/tvfront_filmikprojektdlamultiego_painted.webp',
-];
+// Studio Room textures (Empty - room removed)
+export const STUDIO_TEXTURES = [];
 
 // ============================================
 // COMBINED EXPORTS
@@ -291,10 +247,9 @@ export const PRELOAD_ALL = [
 ];
 
 
-// Textures loaded via useLoader(TextureLoader) - about, studio
+// Textures loaded via useLoader(TextureLoader) - about
 export const PRELOAD_LOADER = [
     ...ABOUT_TEXTURES,
-    ...STUDIO_TEXTURES,
 ];
 
 /**
