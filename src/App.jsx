@@ -135,8 +135,8 @@ function AppContent() {
               dpr={[1, Math.min(typeof window !== 'undefined' ? window.devicePixelRatio : 2, 2)]}
               shadows={settings.shadows}
             >
-              <color attach="background" args={['#fdf8e2']} /> {/* TINTED TO DEEP PURPLE */}
-              <fog attach="fog" args={['#fdf8e2', 15, 50]} /> {/* FOG TINTED TO DEEP PURPLE */}
+              <color attach="background" args={['#f5f2e8']} />
+              <fog attach="fog" args={['#f5f2e8', 15, 50]} />
 
               <Suspense fallback={null}>
                 <Experience

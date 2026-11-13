@@ -393,6 +393,32 @@ const ContactRoom = ({ showRoom, onReady, isExiting, isWarmup }) => {
                 ))}
             </group>
 
+            {/* 🌊 SOCIAL ROOM IDENTITY HEADER */}
+            <group position={[0, 2.1, -9]}>
+                <Text
+                    position={[0, 0, 0]}
+                    fontSize={0.4}
+                    font="/fonts/CabinSketch-Bold.ttf"
+                    color="#1a1a1a"
+                    anchorX="center"
+                    anchorY="middle"
+                    letterSpacing={0.06}
+                >
+                    {`CONNECT WITH ${personalInfo.shortName}`}
+                </Text>
+                <Text
+                    position={[0, -0.32, 0]}
+                    fontSize={0.16}
+                    font="/fonts/CabinSketch-Regular.ttf"
+                    color="#444444"
+                    anchorX="center"
+                    anchorY="middle"
+                    letterSpacing={0.08}
+                >
+                    {personalInfo.handle}
+                </Text>
+            </group>
+
             {/* 🛢️ SOCIAL BARRELS (Floating in water) */}
             {/* GITHUB */}
             <SocialBarrel
@@ -454,7 +480,7 @@ const ContactRoom = ({ showRoom, onReady, isExiting, isWarmup }) => {
                 <planeGeometry args={[2.5, 7]} />
                 <meshBasicMaterial
                     map={moloTexture}
-                    color="#fcf3c6"
+                    color="#f5f2e8"
                     roughness={0.8}
                     side={THREE.DoubleSide}
                     transparent
@@ -468,7 +494,7 @@ const ContactRoom = ({ showRoom, onReady, isExiting, isWarmup }) => {
                 rotation={LATARNIA_SETTINGS.rotation}
             >
                 <planeGeometry args={LATARNIA_SETTINGS.scale} />
-                <meshBasicMaterial color="#fcf3c6"
+                <meshBasicMaterial color="#f5f2e8"
                     map={latarniaTexture}
                     transparent
                     alphaTest={0.5}
@@ -484,7 +510,7 @@ const ContactRoom = ({ showRoom, onReady, isExiting, isWarmup }) => {
                 rotation={STATEK_SETTINGS.rotation}
             >
                 <planeGeometry args={STATEK_SETTINGS.scale} />
-                <meshBasicMaterial color="#fcf3c6"
+                <meshBasicMaterial color="#f5f2e8"
                     map={statekTexture}
                     transparent
                     alphaTest={0.5}

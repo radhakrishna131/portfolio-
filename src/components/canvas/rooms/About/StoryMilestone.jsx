@@ -108,7 +108,7 @@ const StoryMilestone = ({
                     titleColor: '#1a1a1a',
                     subtitleSize: 0.4,
                     subtitleColor: '#4a4a4a',
-                    decorColor: '#fcf3c6'
+                    decorColor: '#f5f2e8'
                 };
             case 'awards':
                 return {
@@ -140,7 +140,7 @@ const StoryMilestone = ({
                     titleColor: '#2a2a2a',
                     subtitleSize: 0.35,
                     subtitleColor: '#666666',
-                    decorColor: '#fcf3c6'
+                    decorColor: '#f5f2e8'
                 };
         }
     }, [type]);

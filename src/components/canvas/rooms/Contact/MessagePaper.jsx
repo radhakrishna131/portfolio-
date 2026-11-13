@@ -63,7 +63,7 @@ const InteractiveTextField = ({
             {/* Invisible Hitbox - colorWrite=false prevents grey artifacts while keeping raycast */}
             <mesh position={hitboxPosition} rotation={[-Math.PI / 2, 0, 0]}>
                 <planeGeometry args={hitboxSize} />
-                <meshBasicMaterial color="#fcf3c6" colorWrite={false} depthWrite={false} />
+                <meshBasicMaterial color="#f5f2e8" colorWrite={false} depthWrite={false} />
             </mesh>
 
             <Text
@@ -122,7 +122,7 @@ const SmoothButton = ({ texture, onClick, position, size, text, fontPath }) => {
         >
             <mesh rotation={[-Math.PI / 2, 0, 0]}>
                 <planeGeometry args={size} />
-                <meshBasicMaterial color="#fcf3c6"
+                <meshBasicMaterial color="#f5f2e8"
                     map={texture}
                     transparent
                     alphaTest={0.1}
@@ -571,7 +571,7 @@ const MessagePaper = ({ position = [0, 0.05, 2], onSend }) => {
             {/* Main Paper Mesh - FRONT (with texture) */}
             <mesh ref={paperRef} rotation={[-Math.PI / 2, 0, 0]} onClick={handlePaperClick}>
                 <planeGeometry args={[PAPER_WIDTH, PAPER_HEIGHT, 20, 20]} />
-                <meshBasicMaterial color="#fcf3c6"
+                <meshBasicMaterial color="#f5f2e8"
                     map={paperTexture}
                     transparent
                     alphaTest={0.5}

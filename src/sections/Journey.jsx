@@ -185,7 +185,7 @@ export default function Journey() {
                     width: '16px',
                     height: '16px',
                     borderRadius: '50%',
-                    backgroundColor: '#fdf8e2',
+                    backgroundColor: '#f5f2e8',
                     border: '3px solid var(--accent-primary)',
                     boxShadow: '0 0 10px var(--accent-glow)',
                     zIndex: 2,

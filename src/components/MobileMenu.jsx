@@ -208,7 +208,7 @@ export default function MobileMenu({ isOpen, onClose, menuItems }) {
               textAlign: 'center',
               padding: '16px',
               background: 'linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%)',
-              color: '#fdf8e2',
+              color: '#f5f2e8',
               borderRadius: 'var(--radius-md)',
               fontFamily: 'var(--font-heading)',
               fontWeight: 'bold',

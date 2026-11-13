@@ -570,7 +570,7 @@ const StudioRoom = ({ showRoom, onReady, isExiting, isWarmup }) => {
                 {/* Invisible Hit Cylinder for easier drag interaction */}
                 <mesh visible={false}>
                     <cylinderGeometry args={[responsiveParams.towerRadius + 0.5, responsiveParams.towerRadius + 0.5, TOWER_HEIGHT * 1.5, 16]} />
-                    <meshBasicMaterial color="#fcf3c6" />
+                    <meshBasicMaterial color="#f5f2e8" />
                 </mesh>
 
                 {monitors.map((item, index) => (
@@ -717,7 +717,7 @@ const MonitorBlock = memo(({ item, meshRef, isSelected, onMonitorClick, disabled
         if (!faceConfig) return null;
         return faceConfig.map(f => {
             const mat = new THREE.MeshBasicMaterial({
-                color: '#fcf3c6',
+                color: '#f5f2e8',
                 map: f.painted || f.sketch // Use sketch as fallback if no painted version
             });
             // Apply paint transition shader
@@ -736,7 +736,7 @@ const MonitorBlock = memo(({ item, meshRef, isSelected, onMonitorClick, disabled
         if (!faceConfig) return null;
         return faceConfig.map(f => {
             if (f.painted) return null; // Will use revealMaterial instead
-            const mat = new THREE.MeshBasicMaterial({ color: '#fcf3c6', map: f.sketch });
+            const mat = new THREE.MeshBasicMaterial({ color: '#f5f2e8', map: f.sketch });
             // Apply paint transition shader
             if (paintOnBeforeCompile) {
                 mat.onBeforeCompile = paintOnBeforeCompile;
@@ -839,7 +839,7 @@ const MonitorBlock = memo(({ item, meshRef, isSelected, onMonitorClick, disabled
                     if (face.painted) {
                         // This face has a painted version → use revealMaterial for brush-stroke discard
                         return (
-                            <revealMaterial color="#fcf3c6"
+                            <revealMaterial color="#f5f2e8"
                                 key={`s${i}`}
                                 ref={matRefs[i]}
                                 attach={`material-${i}`}

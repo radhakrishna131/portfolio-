@@ -18,11 +18,11 @@
         bottom: 0;
         width: 100%; // Each half takes full width but is clipped
         height: 100%;
-        background-color: $color-white;
+        background-color: #f5f2e8;
         background-image: url('/textures/paper-texture.webp');
         background-size: cover;
         background-position: center;
-        // background-blend-mode: multiply; // Optional depending on look
+        background-blend-mode: multiply;
 
         will-change: transform; // Optimize for the big move
 

@@ -2,8 +2,8 @@
 
 :root {
   /* Color Palette Tokens */
-  --background-primary: #050505;
-  --background-secondary: #0a0a0a;
+  --background-primary: #f5f2e8;
+  --background-secondary: #eee9dc;
   --surface-primary: #101010;
   --surface-elevated: #161616;
   
@@ -83,6 +83,12 @@ body {
   background-color: var(--background-primary);
   color: var(--text-secondary);
   line-height: 1.6;
+}
+
+/* Maintain paper background color on all images */
+img, .sketch-image {
+  mix-blend-mode: multiply;
+  filter: contrast(1.02);
 }
 
 /* Scrollbar Customization */

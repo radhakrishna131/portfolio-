@@ -55,7 +55,7 @@ const Tunnel = ({ parallax = { x: 0, y: 0 } }) => {
                 side={THREE.BackSide}
                 roughness={1}
                 metalness={0}
-                color="#fcf3c6"
+                color="#f5f2e8"
             />
         </mesh>
     );

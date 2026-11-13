@@ -199,7 +199,7 @@ export default function Contact() {
 
               <div>
                 <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600, display: 'block', marginBottom: '8px' }}>
-                  Socials & Networks
+                  Socials & Networks ({personalInfo.handle})
                 </span>
                 <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
                   <a
@@ -232,6 +232,18 @@ export default function Contact() {
                   >
                     Twitter / X
                   </a>
+                  {personalInfo.socials.instagram && (
+                    <a
+                      href={personalInfo.socials.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ fontSize: '0.95rem', color: 'var(--text-secondary)' }}
+                      className="contact-item-hover"
+                      aria-label="Instagram Profile"
+                    >
+                      Instagram
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

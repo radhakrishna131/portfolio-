@@ -148,7 +148,7 @@ export default function CustomCursor() {
               fontFamily: 'var(--font-heading)',
               fontWeight: 'bold',
               letterSpacing: '1px',
-              color: '#fdf8e2',
+              color: '#f5f2e8',
             }}
           >
             {cursorText}

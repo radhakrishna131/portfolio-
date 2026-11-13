@@ -10,9 +10,9 @@
 export const personalInfo = {
   // --- Basic Identity ---
   name: "Radha Krishna",
-  shortName: "RADHA", // Used for large 3D floating corridor text and preloader
-  brandName: "RADHA.DEV", // Displayed on 3D corridor walls & badges
-  handle: "@radhakrishna", // Shown on the entrance doors and social badges
+  shortName: "KRISHNA", // Used for large 3D floating corridor text, preloader, and sky milestones
+  brandName: "KRISHNA.DEV", // Displayed on 3D corridor walls & badges
+  handle: "@krishna", // Shown on the entrance doors and social badges
   title: "Creative Engineer & AI/ML Student",
   
   // Tagline words split-animated across 3D corridor camera travel
@@ -46,10 +46,10 @@ export const personalInfo = {
   // --- Social Media Links ---
   // (Used across Footer, Contact Section, and 3D Floating Barrels in Contact Room)
   socials: {
-    github: "https://github.com/radhakrishna", // Replace with your GitHub URL
-    linkedin: "https://linkedin.com/in/radhakrishna", // Replace with your LinkedIn URL
-    twitter: "https://twitter.com/radhakrishna", // Replace with your Twitter/X URL
-    instagram: "https://instagram.com"
+    github: "https://github.com/radhakrishna131", // Your active GitHub repo/profile
+    linkedin: "https://linkedin.com/in/krishna", // Your LinkedIn URL
+    twitter: "https://twitter.com/krishna", // Your Twitter/X URL
+    instagram: "https://instagram.com/krishna"
   },
 
   // --- Biography / About Paragraphs ---
